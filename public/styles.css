@@ -3,7 +3,7 @@
 }
 
 button {
-    background-color: black;
+    background-color: rgb(242, 242, 115);
     color: white;
     border: none;
     border-right: 2px solid aqua;
@@ -15,4 +15,8 @@ button {
 h1 {
     width: 50%;
     color:rgb(226, 43, 134)
+}
+
+body{
+    color: lavenderblush
 }
