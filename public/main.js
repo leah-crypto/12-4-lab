@@ -12,9 +12,11 @@ const baseUrl = 'http://3.142.151.126'
         function putTheThingInTheView(res) {
             container.innerHTML = ''
             nameInput.value = ''
+console.log(res.data);
 
             res.data.forEach((studentName, index) => {
                 container.innerHTML += `<p name=${index}>${studentName}</p>`
+
             })
 
             document.querySelectorAll('p').forEach(element => {
