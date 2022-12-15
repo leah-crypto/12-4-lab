@@ -22,7 +22,7 @@ const baseUrl = 'http://localhost:5050'
 
                 element.addEventListener('click', () => {
                     axios
-                        .delete(`${baseUrl}/api/students/${theIndexValue}`)
+                        .delete(`/api/students/${theIndexValue}`)
                         .then(res => {
                             putTheThingInTheView(res)
                         })
@@ -34,7 +34,7 @@ const baseUrl = 'http://localhost:5050'
             evt.preventDefault();
 
             axios
-                .post(`${baseUrl}/api/students`, { name: nameInput.value })
+                .post(`/api/students`, { name: nameInput.value })
                 .then(res => {
                     putTheThingInTheView(res)
                 })
@@ -56,7 +56,7 @@ const baseUrl = 'http://localhost:5050'
 
         // get student list on initial load
         axios
-            .get(`${baseUrl}/api/students`)
+            .get(`/api/students`)
             .then(res => {
                 putTheThingInTheView(res)
             })
