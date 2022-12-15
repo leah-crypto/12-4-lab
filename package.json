@@ -2,7 +2,7 @@
   "name": "deployment",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/leah-crypto/12-4-lab#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "rollbar": "^2.26.0"
   }
 }
