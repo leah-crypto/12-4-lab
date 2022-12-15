@@ -7,7 +7,7 @@ btn.addEventListener('click', clickHandler)
 const baseUrl = 'http://3.142.151.126'
         const addForm = document.querySelector('form');
         const nameInput = document.querySelector('input');
-        const container = document.querySelector('section');
+        const container = document.querySelector('#display-section');
 
         function putTheThingInTheView(res) {
             container.innerHTML = ''
