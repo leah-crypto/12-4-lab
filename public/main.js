@@ -4,7 +4,7 @@ const clickHandler = () => alert('Hello Kitty is 3 apples tall!! <3')
 
 btn.addEventListener('click', clickHandler)
 
-//const baseUrl = 'http://localhost:5050'
+const baseUrl = 'http://localhost:5050'
         const addForm = document.querySelector('form');
         const nameInput = document.querySelector('input');
         const container = document.querySelector('section');
@@ -22,7 +22,7 @@ btn.addEventListener('click', clickHandler)
 
                 element.addEventListener('click', () => {
                     axios
-                        .delete(`/api/students/${theIndexValue}`)
+                        .delete(`${baseUrl}/api/students/${theIndexValue}`)
                         .then(res => {
                             putTheThingInTheView(res)
                         })
@@ -34,7 +34,7 @@ btn.addEventListener('click', clickHandler)
             evt.preventDefault();
 
             axios
-                .post(`/api/students`, { name: nameInput.value })
+                .post(`${baseUrl}/api/students`, { name: nameInput.value })
                 .then(res => {
                     putTheThingInTheView(res)
                 })
@@ -56,7 +56,7 @@ btn.addEventListener('click', clickHandler)
 
         // get student list on initial load
         axios
-            .get(`/api/students`)
+            .get(`${baseUrl}/api/students`)
             .then(res => {
                 putTheThingInTheView(res)
             })
