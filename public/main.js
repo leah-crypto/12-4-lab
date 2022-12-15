@@ -1,4 +1,5 @@
 const btn = document.querySelector('button')
+console.log('here')
 
 const clickHandler = () => alert('Hello Kitty is 3 apples tall!! <3')
 
