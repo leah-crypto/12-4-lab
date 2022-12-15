@@ -4,7 +4,7 @@ const clickHandler = () => alert('Hello Kitty is 3 apples tall!! <3')
 
 btn.addEventListener('click', clickHandler)
 
-const baseUrl = 'http://3.142.151.126/'
+const baseUrl = 'http://3.142.151.126'
         const addForm = document.querySelector('form');
         const nameInput = document.querySelector('input');
         const container = document.querySelector('section');
